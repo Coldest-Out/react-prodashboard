@@ -60,6 +60,8 @@ const Form = () => {
 								value={values.firstName}
 								name="firstName"
 								error={!!touched.firstName && !!errors.firstName}
+								helperText={touched.firstName && errors.firstName}
+								sx={{ gridColumn: "span 2"}}
 							/>
 						</Box>
 					</form>
