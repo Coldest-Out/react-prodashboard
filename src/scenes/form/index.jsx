@@ -31,7 +31,7 @@ const Form = () => {
 	const handleFormSubmit = (values) => {
 		console.log(values);
 	}
-	retun (
+	return (
 		<Box m="20px">
 			<Header title="CREATE USER" subtitle="Create a New User Profile"/>
 
