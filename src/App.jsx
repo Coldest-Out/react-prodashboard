@@ -13,7 +13,7 @@ import Form from './scenes/form';
 // import Pie from './scenes/global/pie';
 // import FAQ from './scenes/global/faq';
 // import Geography from './scenes/global/geography';
-// import Calendar from './scenes/global/calendar';
+import Calendar from './scenes/global/calendar';
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -38,7 +38,7 @@ function App() {
                 {/* <Route path="/line" element={<Line />}/> */}
                 {/* <Route path="/faq" element={<FAQ />}/> */}
                 {/* <Route path="/geography" element={<Geography />}/> */}
-                {/* <Route path="/calendar" element={<Calendar />}/> */}
+                <Route path="/calendar" element={<Calendar />}/>
               </Routes>
               
             </main>
