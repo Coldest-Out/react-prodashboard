@@ -16,6 +16,7 @@
     "@fullcalendar/daygrid": "^6.1.4",
     "@fullcalendar/list": "^6.1.4",
     "@fullcalendar/timegrid": "^6.1.4",
+    "@fullcalendar/interaction": "^5.11.3",
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.11.13",
     "@mui/styled-engine": "^5.11.11",
