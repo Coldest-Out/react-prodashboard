@@ -16,6 +16,7 @@ import {
 } from '@mui/material';
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
+import timegrid from "@fullcalendar/timegrid";
 
 const Calendar = () => {
   const theme = useTheme();
@@ -48,7 +49,7 @@ const Calendar = () => {
     }
   };
 
-	return 
+	return (
 	<Box m="20px">
 		<Header title="CALENDAR" subtitle="Full Calendar Interactive Page" />
 
@@ -87,8 +88,41 @@ const Calendar = () => {
 						))}
 					</List>
 			</Box>
+
+			{/** CALENDAR */}
+			{/* <Box flex="1 1 100%" ml="15px">
+				<FullCalendar
+					height="75vh"
+					plugins={[
+						dayGridPlugin,
+						timeGridPlugin,
+						interactionPlugin,
+						listPlugin
+					]}
+					headerToolbar={{
+						left: "prev, next today",
+						center: "title",
+						right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth"
+					}}
+					initialView="dayGridMonth"
+					editable={true}
+					selectable={true}
+					selectMirror={true}
+					dayMaxEvents={true}
+					select={handleDateClick}
+					eventClick={handleEventClick}
+					eventsSet={(events) => setCurrentEvents(events)}
+					initialEvents={[
+						{ id: "1234", title: "All-day event", date: "2022-09-14"},
+						{ id: "4321", title: "Timed events", date: "2022-09-28"},
+
+					]}
+				/>
+
+			</Box> */}
 		</Box>
 	</Box>
+	);
 };
 
 export default Calendar;
